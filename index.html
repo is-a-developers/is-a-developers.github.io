@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>is-a-developer.live - Free Developer Subdomains</title>
+<meta name="description" content="Get your own free subdomain under is-a-developer.live. Perfect for developers, portfolios, and projects.">
+<meta name="keywords" content="free subdomain, developer subdomain, is-a-developer.live, portfolio domain, developer portfolio">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://is-a-developer.live/">
+<meta property="og:title" content="is-a-developer.live - Free Developer Subdomains">
+<meta property="og:description" content="Get your own free subdomain under is-a-developer.live. Perfect for developers, portfolios, and projects.">
+<meta property="og:image" content="https://is-a-developer.live/card.png">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://is-a-developer.live/">
+<meta property="twitter:title" content="is-a-developer.live - Free Developer Subdomains">
+<meta property="twitter:description" content="Get your own free subdomain under is-a-developer.live. Perfect for developers, portfolios, and projects.">
+<meta property="twitter:image" content="https://is-a-developer.live/card.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+:root {
+--bg-color: #0f172a;
+--text-color: #e2e8f0;
+--muted-color: #94a3b8;
+--accent-color: #38bdf8;
+--card-bg: #1e293b;
+--border-color: #334155;
+--success-color: #22c55e;
+--error-color: #ef4444;
+--warning-color: #f59e0b;
+}
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+background-color: var(--bg-color);
+color: var(--text-color);
+line-height: 1.6;
+overflow-x: hidden;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 2rem;
+}
+
+header {
+text-align: center;
+margin-bottom: 3rem;
+animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+from {
+opacity: 0;
+transform: translateY(-20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+h1 {
+font-size: 3rem;
+margin-bottom: 1rem;
+background: linear-gradient(135deg, var(--accent-color), #a78bfa);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.subtitle {
+font-size: 1.2rem;
+color: var(--muted-color);
+margin-bottom: 2rem;
+}
+
+.features {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+margin-bottom: 3rem;
+}
+
+.feature-card {
+background: var(--card-bg);
+padding: 2rem;
+border-radius: 12px;
+border: 1px solid var(--border-color);
+transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+transform: translateY(20px);
+opacity: 0;
+animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.feature-card:nth-child(1) { animation-delay: 0.1s; }
+.feature-card:nth-child(2) { animation-delay: 0.2s; }
+.feature-card:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.feature-card:hover {
+transform: translateY(-10px) scale(1.02);
+border-color: var(--accent-color);
+box-shadow: 0 10px 25px rgba(56, 189, 248, 0.1);
+}
+
+.feature-icon {
+font-size: 2.5rem;
+margin-bottom: 1rem;
+transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+transform: scale(1.2) rotate(10deg);
+}
+
+.feature-title {
+font-size: 1.5rem;
+margin-bottom: 1rem;
+color: var(--accent-color);
+}
+
+.cta-section {
+background: linear-gradient(135deg, #1e293b, #0f172a);
+padding: 3rem;
+border-radius: 16px;
+border: 1px solid var(--border-color);
+text-align: center;
+margin-bottom: 3rem;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+animation: slideIn 0.6s ease-out;
+}
+
+@keyframes slideIn {
+from {
+opacity: 0;
+transform: translateX(-20px);
+}
+to {
+opacity: 1;
+transform: translateX(0);
+}
+}
+
+.cta-section:hover {
+box-shadow: 0 10px 25px rgba(56, 189, 248, 0.15);
+}
+
+.subdomain-checker {
+display: flex;
+gap: 1rem;
+justify-content: center;
+align-items: center;
+margin-bottom: 2rem;
+flex-wrap: wrap;
+}
+
+.input-group {
+display: flex;
+gap: 0.5rem;
+align-items: center;
+background: var(--card-bg);
+padding: 0.75rem 1.25rem;
+border-radius: 12px;
+border: 1px solid var(--border-color);
+transition: all 0.3s ease;
+}
+
+.input-group:focus-within {
+border-color: var(--accent-color);
+box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.1);
+}
+
+input[type="text"] {
+background: transparent;
+border: none;
+outline: none;
+color: var(--text-color);
+font-size: 1.2rem;
+padding: 0.75rem;
+width: 300px;
+transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+width: 320px;
+}
+
+.domain-suffix {
+color: var(--muted-color);
+font-weight: bold;
+font-size: 1.2rem;
+}
+
+button {
+background: var(--accent-color);
+color: #000;
+border: none;
+padding: 0.75rem 2rem;
+border-radius: 12px;
+font-size: 1.1rem;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+position: relative;
+overflow: hidden;
+}
+
+button::before {
+content: '';
+position: absolute;
+top: 50%;
+left: 50%;
+width: 0;
+height: 0;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.3);
+transform: translate(-50%, -50%);
+transition: width 0.6s, height 0.6s;
+}
+
+button:hover::before {
+width: 300px;
+height: 300px;
+}
+
+button:hover {
+transform: translateY(-3px);
+box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+}
+
+button:active {
+transform: translateY(-1px);
+}
+
+.messages {
+min-height: 50px;
+margin-top: 1rem;
+}
+
+.message {
+padding: 1rem;
+border-radius: 12px;
+margin-bottom: 1rem;
+border-left: 4px solid transparent;
+opacity: 0;
+transform: translateY(10px);
+transition: all 0.3s ease;
+}
+
+.message.active {
+opacity: 1;
+transform: translateY(0);
+}
+
+.success {
+background-color: rgba(34, 197, 94, 0.1);
+border-left-color: var(--success-color);
+color: var(--success-color);
+}
+
+.error {
+background-color: rgba(239, 68, 68, 0.1);
+border-left-color: var(--error-color);
+color: var(--error-color);
+}
+
+.result-card {
+background: var(--card-bg);
+padding: 1.5rem;
+border-radius: 12px;
+border: 1px solid var(--border-color);
+margin-top: 1rem;
+display: none;
+transition: all 0.3s ease;
+}
+
+.result-card.visible {
+display: block;
+animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+
+.user-avatar {
+width: 48px;
+height: 48px;
+border-radius: 50%;
+margin-right: 1rem;
+vertical-align: middle;
+transition: transform 0.3s ease;
+}
+
+.user-avatar:hover {
+transform: scale(1.1) rotate(5deg);
+}
+
+.how-it-works {
+margin-bottom: 3rem;
+}
+
+.step {
+background: var(--card-bg);
+padding: 2rem;
+border-radius: 12px;
+border: 1px solid var(--border-color);
+margin-bottom: 2rem;
+transition: all 0.3s ease;
+opacity: 0;
+transform: translateX(-20px);
+animation: fadeInLeft 0.5s ease-out forwards;
+}
+
+.step:nth-child(1) { animation-delay: 0.1s; }
+.step:nth-child(2) { animation-delay: 0.2s; }
+.step:nth-child(3) { animation-delay: 0.3s; }
+.step:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInLeft {
+to {
+opacity: 1;
+transform: translateX(0);
+}
+}
+
+.step:hover {
+transform: translateX(10px);
+border-color: var(--accent-color);
+}
+
+.step-number {
+display: inline-block;
+width: 50px;
+height: 50px;
+background: var(--accent-color);
+color: #000;
+border-radius: 50%;
+text-align: center;
+line-height: 50px;
+font-weight: bold;
+margin-bottom: 1rem;
+transition: all 0.3s ease;
+}
+
+.step:hover .step-number {
+transform: scale(1.1);
+background: #a78bfa;
+}
+
+.footer {
+text-align: center;
+color: var(--muted-color);
+margin-top: 3rem;
+padding-top: 2rem;
+border-top: 1px solid var(--border-color);
+transition: all 0.3s ease;
+}
+
+.footer:hover {
+color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+h1 {
+font-size: 2.5rem;
+}
+
+input[type="text"] {
+width: 200px;
+}
+
+input[type="text"]:focus {
+width: 220px;
+}
+
+.subdomain-checker {
+flex-direction: column;
+}
+
+.feature-card {
+grid-template-columns: 1fr;
+}
+}
+
+/* Loading animation */
+@keyframes pulse {
+0%, 100% {
+opacity: 1;
+}
+50% {
+opacity: 0.5;
+}
+}
+
+.loading {
+display: inline-block;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background: var(--accent-color);
+animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Floating animation for decorative elements */
+@keyframes float {
+0% {
+transform: translateY(0px);
+}
+50% {
+transform: translateY(-10px);
+}
+100% {
+transform: translateY(0px);
+}
+}
+
+.floating-element {
+animation: float 3s ease-in-out infinite;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>is-a-developer.live</h1>
+<p class="subtitle">Free subdomains for developers, by nloverx</p>
+</header>
+
+<div class="features">
+<div class="feature-card">
+<div class="feature-icon floating-element">🚀</div>
+<h3 class="feature-title">Free & Fast</h3>
+<p>Get your subdomain instantly. No credit card required.</p>
+</div>
+</div>
+
+<div class="cta-section">
+<h2>Check Subdomain Availability</h2>
+<div class="subdomain-checker">
+<div class="input-group">
+<input type="text" id="sd-input" placeholder="yourname" autocomplete="off">
+<span class="domain-suffix" id="domainSuffix">.is-a-developer.live</span>
+</div>
+<button id="checkBtn">Check Availability</button>
+</div>
+
+<div class="result-card" id="result-card">
+<div class="user-infos">
+<img id="user-avatar" class="user-avatar" src="" alt="user avatar">
+<span>This subdomain is owned by <a id="user-gh" target="_blank" href="#"><span id="user-gh-name"></span></a>.</span>
+</div>
+</div>
+
+<div class="messages" id="messages">
+<div class="message success" id="successMsg">
+✅ Great! This subdomain is available. <a href="https://github.com/is-a-developers/register" style="color: var(--accent-color);">Register now</a>
+</div>
+<div class="message error" id="errorMsg">
+❌ Sorry, this subdomain is not available. <span id="errorText"></span>
+</div>
+</div>
+</div>
+
+<div class="how-it-works">
+<h2 style="text-align: center; margin-bottom: 2rem;">How It Works</h2>
+
+<div class="step">
+<span class="step-number">1</span>
+<h3>Choose Your Subdomain</h3>
+<p>Use our checker above to find an available subdomain that fits your brand or project.</p>
+</div>
+
+<div class="step">
+<span class="step-number">2</span>
+<h3>Fork & Create PR</h3>
+<p>Fork our repository, create a JSON file with your subdomain configuration, and submit a pull request.</p>
+</div>
+
+<div class="step">
+<span class="step-number">3</span>
+<h3>Get Approved</h3>
+<p>Our team reviews your request to ensure it follows our guidelines and policies.</p>
+</div>
+
+<div class="step">
+<span class="step-number">4</span>
+<h3>Go Live</h3>
+<p>Once approved, your subdomain is live and ready to use with your preferred hosting service.</p>
+</div>
+</div>
+
+<div class="footer">
+<p>© 2025 is-a-developer.live. Made with ❤️ for the developer community.</p>
+</div>
+</div>
+
+<script>
+const input = document.getElementById("sd-input");
+const checkBtn = document.getElementById("checkBtn");
+const errorMsg = document.getElementById("errorMsg");
+const successMsg = document.getElementById("successMsg");
+const messages = document.getElementById("messages");
+const resultCard = document.getElementById("result-card");
+const userAvatar = document.getElementById("user-avatar");
+const userGhName = document.getElementById("user-gh-name");
+const userGhLink = document.getElementById("user-gh");
+const errorText = document.getElementById("errorText");
+
+const checkSubdomainAvailability = async (subdomain) => {
+const domainRawUrl = `https://raw.githubusercontent.com/is-a-developers/register/main/domains/${subdomain}.json`;
+const reservedRawUrl = "https://raw.githubusercontent.com/is-a-developers/register/main/reserved.json";
+
+try {
+const domainResponse = await fetch(domainRawUrl);
+
+if (domainResponse.ok) {
+const jsonText = await domainResponse.text();
+let content;
+try {
+content = JSON.parse(jsonText);
+} catch (e) {
+return { available: false, reason: "error" };
+}
+
+const owner = content.owner || {};
+const githubUsername = owner.username || owner.github || "unknown";
+
+return {
+available: false,
+reason: "taken",
+ownerInfo: {
+username: githubUsername,
+avatar: githubUsername !== "unknown" ? `https://avatars.githubusercontent.com/${githubUsername}?size=64` : ""
+}
+};
+}
+
+if (domainResponse.status === 404) {
+const reservedResponse = await fetch(reservedRawUrl);
+
+if (reservedResponse.ok) {
+const reservedList = await reservedResponse.json();
+
+if (Array.isArray(reservedList) && reservedList.includes(subdomain)) {
+return { available: false, reason: "reserved" };
+}
+}
+
+return { available: true };
+}
+
+return { available: false, reason: "error" };
+} catch (error) {
+return { available: false, reason: "error" };
+}
+};
+
+const runCheck = async (subdomain) => {
+errorMsg.classList.remove("active");
+successMsg.classList.remove("active");
+resultCard.classList.remove("visible");
+userAvatar.src = "";
+userGhName.textContent = "";
+userGhLink.href = "#";
+
+if (!subdomain) {
+messages.style.display = "none";
+return;
+}
+
+messages.style.display = "block";
+
+const result = await checkSubdomainAvailability(subdomain);
+
+if (!result.available) {
+errorMsg.classList.add("active");
+
+if (result.reason === "taken") {
+errorText.textContent = `The subdomain "${subdomain}" is already taken.`;
+
+if (result.ownerInfo) {
+userGhName.textContent = result.ownerInfo.username;
+if (result.ownerInfo.username !== "unknown") {
+userGhLink.href = `https://github.com/${result.ownerInfo.username}`;
+userAvatar.src = result.ownerInfo.avatar;
+}
+}
+resultCard.classList.add("visible");
+} else if (result.reason === "reserved") {
+errorText.textContent = `The subdomain "${subdomain}" is reserved and cannot be registered.`;
+} else {
+errorText.textContent = "Error checking availability. Please try again later.";
+}
+} else {
+successMsg.classList.add("active");
+}
+};
+
+checkBtn.addEventListener("click", (e) => {
+e.preventDefault();
+const subdomain = input.value.trim().toLowerCase();
+runCheck(subdomain);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+const params = new URLSearchParams(location.search);
+const query = params.get("q");
+if (query) {
+const subdomain = query.trim().toLowerCase();
+input.value = subdomain;
+runCheck(subdomain);
+}
+});
+
+input.addEventListener("input", (e) => {
+const subdomain = e.target.value.trim().toLowerCase();
+clearTimeout(input.checkTimeout);
+if (subdomain.length > 2) {
+input.checkTimeout = setTimeout(() => {
+runCheck(subdomain);
+}, 600);
+} else {
+messages.style.display = "none";
+resultCard.classList.remove("visible");
+}
+});
+
+// Add floating animation to feature icons
+document.querySelectorAll('.feature-icon').forEach((icon, index) => {
+icon.style.animationDelay = `${index * 0.1}s`;
+});
+
+// Add scroll animations
+window.addEventListener('scroll', () => {
+const scrolled = window.pageYOffset;
+const parallax = scrolled * 0.5;
+document.querySelector('header').style.transform = `translateY(${parallax * 0.1}px)`;
+});
+</script>
+</body>
+</html>
