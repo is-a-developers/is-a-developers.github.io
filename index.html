@@ -544,8 +544,8 @@ content = JSON.parse(jsonText);
 return { available: false, reason: "error" };
 }
 
-const owner = content.owner || {};
-const githubUsername = owner.username || owner.github || "unknown";
+const owner = content.user || {};
+const githubUsername = owner.username || "unknown";
 
 return {
 available: false,
